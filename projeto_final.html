@@ -29,10 +29,12 @@
             margin: 0 auto;
             margin-top: 30px;
             background-color: #564146;
+            border-radius: 10px 10px 10px 10px;
         }
         #header-img {
             display: inline-block;
             border: 3px solid black;
+            border-radius: 20px 20px 20px 20px;
         }
         main {
             text-align: center;
@@ -45,6 +47,13 @@
             background-color: darksalmon;
             width: 1100px ;
             margin: 0 auto;
+            border-radius: 20px 20px 20px 20px;
+        }
+        .coffe, .vanilla, .cappuccino {
+            border: 4px solid;
+            height: 350px;
+            background-color: burlywood;
+            border-radius: 5px 5px 5px 5px;
         }
         #cafe-img {
             border: 3px solid black;
@@ -75,7 +84,7 @@
         <section id="menu">
             <h2>Menu</h2>
             <div class="itens-menu">
-            <article>
+            <article class="coffe">
                 <img src="https://img.freepik.com/vetores-premium/pixel-art-ilustracao-cafe-pixelizado-cafe-delicioso-fxicara-de-cafe-icone-pixelizado_1038602-302.jpg" alt="cafe" id="cafe-img" width="100" height="100">
                 <h3>Coffe</h3>
                 <p>
@@ -85,7 +94,7 @@
                     280ml - <i><s>$3.00</s> $2.49</i>
                 </p>
             </article>
-            <article>
+            <article class="vanilla">
                 <img src="https://i.pinimg.com/564x/bf/15/bb/bf15bb2a622805bf5bdd1cca07f444fc.jpg" alt="cafe-vanilla" id="cafe-img" width="100" height="100">
                 <h3>Vanilla</h3>
                 <p>
@@ -96,7 +105,7 @@
                     350ml - <i>$6.80</i>
                 </p>
             </article>
-            <article>
+            <article class="cappuccino">
                 <img src="https://img.freepik.com/vetores-premium/icone-da-caneca-de-cafe-cappuccino-pixel-art-para-a-parte-do-jogo_360488-37.jpg" alt="cafe-cappuccino" id="cafe-img" height="100" width="100">
                 <h3>Cappuccino</h3>
                 <p>
@@ -111,7 +120,7 @@
         </section>
         <section>
             <h2>Place Your Order</h2>
-            <form action="">
+            <form class="place-order">
                 <label>Coffe: <input type="number" id="cafe-order" name="cafe-tipo-coffe" minlength="0" required></label>
                 <label>Vanilla: <input type="number" id="cafe-order" name="cafe-tipo-vanilla" minlength="0" required></label>
                 <label>Cappuccino: <input type="number" id="cafe-order" name="cafe-tipo-cappuccino" minlength="0" required></label> <br> <br>
