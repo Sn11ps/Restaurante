@@ -17,6 +17,20 @@
             padding: 20px;
             background: #474e61;
         }
+        nav {
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+            height: 100px;
+            border: 3px solid black;
+            margin-top: 15px;
+            background-color: burlywood;
+            border-radius: 10px 10px 10px 10px;
+        }
+        .ligaçao {
+            text-decoration: none;
+            color: black
+        }
         #header-title {
             font-family: 'Jersey 15', cursive;
             font-weight: 400;
@@ -76,8 +90,8 @@
         <img src="https://external-preview.redd.it/c3rD1YQxk74h744-dzEibb97KZyptzKX31OhFd0ia5g.png?format=pjpg&auto=webp&s=43798d75da051aceb81e8322833ad00deaa4232b" alt="cat-cafe" id="header-img" width="800" height="300">
         <h1 id="header-title">Cat Café</h1>
         <nav>
-            <h3><a href="#menu"></a></h3>
-            <h3><a href="#order-form"></a></h3>
+            <h3><a href="#menu" class="ligaçao">Menu</a></h3>
+            <h3><a href="#order-form" class="ligaçao">Place Your Order</a></h3>
         </nav>
     </header>
     <main>
@@ -118,12 +132,12 @@
             </article>
             </div>
         </section>
-        <section>
+        <section id="order-form">
             <h2>Place Your Order</h2>
             <form class="place-order">
-                <label>Coffe: <input type="number" id="cafe-order" name="cafe-tipo-coffe" minlength="0" required></label>
-                <label>Vanilla: <input type="number" id="cafe-order" name="cafe-tipo-vanilla" minlength="0" required></label>
-                <label>Cappuccino: <input type="number" id="cafe-order" name="cafe-tipo-cappuccino" minlength="0" required></label> <br> <br>
+                <label>Coffe: <input type="number" id="cafe-order" name="cafe-tipo-coffe" min="0" required></label>
+                <label>Vanilla: <input type="number" id="cafe-order" name="cafe-tipo-vanilla" min="0" required></label>
+                <label>Cappuccino: <input type="number" id="cafe-order" name="cafe-tipo-cappuccino" min="0" required></label> <br> <br>
                 <label>Add (More) Milk <input type="checkbox" name="side-coffe" id="cafe-adicionais"></label> 
                 <label>Add (More) Coffe <input type="checkbox" name="side-coffe" id="cafe-adicionais"></label> <br>
                 <label>Add (More) Milk Foam <input type="checkbox" name="side-coffe" id="cafe-adicionais"></label> 
